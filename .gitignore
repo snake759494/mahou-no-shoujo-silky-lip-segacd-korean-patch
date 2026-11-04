@@ -1,0 +1,15 @@
+work/
+__pycache__/
+*.py[cod]
+*.chd
+*.iso
+*.cue
+*.bin
+*.gen
+*.st
+*.srm
+*.xdelta
+*.exe
+*.ttf
+*.otf
+*.zip
