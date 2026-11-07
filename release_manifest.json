@@ -1,14 +1,51 @@
 {
-  "version": "v1.0.0",
-  "date": "2026-11-04",
+  "version": "v1.0.1",
+  "date": "2026-11-07",
   "repository": "https://github.com/snake759494/mahou-no-shoujo-silky-lip-segacd-korean-patch",
   "files": {
-    "source": {"file": "Mahou no Shoujo - Silky Lip (Japan).chd", "size": 192038200, "sha256": "437076f35cc80bbae2233e83671dcdb41a68a314c9eada8335886e3857ab5e48"},
-    "output": {"file": "Mahou no Shoujo - Silky Lip (Japan) (Korean).chd", "size": 188077791, "sha256": "ac7124c6fc3fd2441b6dcefba9f75cbb9a56db5a7d27c795701fda2e1667d0bf"},
-    "patch": {"file": "Mahou_no_Shoujo_Silky_Lip_SCD_KR.xdelta", "size": 181702936, "sha256": "bb3f1a6c7286f11883e42f95444cbf193bca062ed7a179eb4f9821ac69fd7d6b"}
+    "source": {
+      "file": "Mahou no Shoujo - Silky Lip (Japan).chd",
+      "size": 192038200,
+      "sha256": "437076f35cc80bbae2233e83671dcdb41a68a314c9eada8335886e3857ab5e48"
+    },
+    "output": {
+      "file": "Mahou no Shoujo - Silky Lip (Japan) (Korean).chd",
+      "size": 188077791,
+      "sha256": "ac7124c6fc3fd2441b6dcefba9f75cbb9a56db5a7d27c795701fda2e1667d0bf"
+    },
+    "patch": {
+      "file": "Mahou_no_Shoujo_Silky_Lip_SCD_KR.xdelta",
+      "size": 181702936,
+      "sha256": "bb3f1a6c7286f11883e42f95444cbf193bca062ed7a179eb4f9821ac69fd7d6b"
+    },
+    "bin_source": {
+      "file": "Mahou no Shoujo - Silky Lip (Japan).bin",
+      "size": 418533696,
+      "sha256": "45f1ad04cc0f0c2d5b55e4100f69e972c7e1935efdb7e6d026050669de5dfea3"
+    },
+    "bin_output": {
+      "file": "Mahou no Shoujo - Silky Lip (Japan) (Korean).bin",
+      "size": 418533696,
+      "sha256": "ce69f0794164ae81b27d9595b3804ef5eeb9e9c152975f902898e8c0b44d03af"
+    },
+    "bin_patch": {
+      "file": "Mahou_no_Shoujo_Silky_Lip_SCD_KR_BIN.xdelta",
+      "size": 10020482,
+      "sha256": "ec017d4ac81826072a573e83090b8dd5a381a8c90717564b7a876ed950b25f8b"
+    }
   },
-  "xdelta_options": ["-f", "-0", "-S", "none", "-D", "-e"],
-  "release_assets": ["Mahou_no_Shoujo_Silky_Lip_SCD_KR.xdelta"],
+  "xdelta_options": [
+    "-f",
+    "-0",
+    "-S",
+    "none",
+    "-D",
+    "-e"
+  ],
+  "release_assets": [
+    "Mahou_no_Shoujo_Silky_Lip_SCD_KR.xdelta",
+    "Mahou_no_Shoujo_Silky_Lip_SCD_KR_BIN.xdelta"
+  ],
   "full_playthrough_verified": false,
   "hardware_verified": false
 }

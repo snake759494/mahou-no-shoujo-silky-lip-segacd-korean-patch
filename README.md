@@ -1,6 +1,6 @@
 # 마법의 소녀 실키립 — 메가 CD 한글패치
 
-일본판 **魔法の少女シルキーリップ (Mahou no Shoujo - Silky Lip)**(메가 CD)의 비공식 한글패치 **v1.0.0 (2026-11-04)** 입니다. 외부 기계 번역 없이 직접 번역했습니다.
+일본판 **魔法の少女シルキーリップ (Mahou no Shoujo - Silky Lip)**(메가 CD)의 비공식 한글패치 **v1.0.1 (2026-11-07)** 입니다. 외부 기계 번역 없이 직접 번역했습니다.
 
 [정식 패치 다운로드](https://github.com/snake759494/mahou-no-shoujo-silky-lip-segacd-korean-patch/releases/latest) · [빌드](docs/BUILD.md) · [기술 설명](docs/TECHNICAL.md) · [검증 범위](docs/VALIDATION.md) · [권리 안내](RIGHTS.md)
 
@@ -24,7 +24,27 @@ Get-FileHash -Algorithm SHA256 'Mahou no Shoujo - Silky Lip (Japan) (Korean).chd
 | output | 188,077,791 | `ac7124c6fc3fd2441b6dcefba9f75cbb9a56db5a7d27c795701fda2e1667d0bf` |
 | patch | 181,702,936 | `bb3f1a6c7286f11883e42f95444cbf193bca062ed7a179eb4f9821ac69fd7d6b` |
 
-패치는 CHD 파일 기준입니다. CHD는 압축 파일이라 패치 크기가 큽니다. xdelta는 **`-0 -S none -D`**로 빠르게 생성했습니다. 릴리즈 첨부는 xdelta 하나이며 디스크 이미지·폰트·외부 실행파일·저장 파일은 포함하지 않습니다.
+패치는 CHD 파일 기준입니다. CHD는 압축 파일이라 패치 크기가 큽니다. xdelta는 **`-0 -S none -D`**로 빠르게 생성했습니다. 릴리즈 첨부는 CHD용·BIN용 xdelta 두 개이며 디스크 이미지·폰트·외부 실행파일·저장 파일은 포함하지 않습니다.
+
+## 에뮬레이터별 안내 (중요)
+
+- **RetroArch ClownMDEmu는 CHD로 실행하면 제1화 방 장면에서 코어가 종료됩니다.** 패치하지 않은 원본 CHD에서도 똑같이 종료되는 코어의 CHD 처리 문제입니다(압축 없는 CHD로도 동일). **BIN/CUE로 실행하면 정상 진행**되므로 아래 BIN/CUE 패치를 사용하세요.
+- **Genesis Plus GX·PicoDrive**는 메가 CD 실행에 **일본판 BIOS**(`bios_CD_J.bin`)가 RetroArch `system` 폴더에 필요합니다. BIOS가 없거나 원본 해시가 다르면 실행되지 않습니다. 이 저장소의 검증 환경에는 BIOS가 없어 이 두 코어는 확인하지 못했습니다.
+- **BlastEm**은 메가 CD를 지원하지 않는 메가 드라이브 전용 에뮬레이터라 실행되지 않습니다.
+
+### BIN/CUE 패치 (권장)
+
+1. 원본 CHD를 chdman으로 단일 BIN/CUE로 풉니다.
+   `chdman extractcd -i "Mahou no Shoujo - Silky Lip (Japan).chd" -o "Mahou no Shoujo - Silky Lip (Japan).cue" -ob "Mahou no Shoujo - Silky Lip (Japan).bin"`
+2. BIN의 SHA-256이 `45f1ad04cc0f0c2d5b55e4100f69e972c7e1935efdb7e6d026050669de5dfea3`인지 확인합니다.
+3. **Mahou_no_Shoujo_Silky_Lip_SCD_KR_BIN.xdelta**(10,020,482바이트)를 BIN에 적용합니다. 결과 SHA-256: `ce69f0794164ae81b27d9595b3804ef5eeb9e9c152975f902898e8c0b44d03af`
+4. CUE 파일 첫 줄의 BIN 파일 이름을 결과 BIN 이름으로 바꾸고 CUE로 실행합니다.
+
+| 구분 | 바이트 | SHA-256 |
+| --- | ---: | --- |
+| BIN source | 418,533,696 | `45f1ad04cc0f0c2d5b55e4100f69e972c7e1935efdb7e6d026050669de5dfea3` |
+| BIN output | 418,533,696 | `ce69f0794164ae81b27d9595b3804ef5eeb9e9c152975f902898e8c0b44d03af` |
+| BIN patch | 10,020,482 | `ec017d4ac81826072a573e83090b8dd5a381a8c90717564b7a876ed950b25f8b` |
 
 ## 한글화 내용
 

@@ -1,5 +1,10 @@
 # 변경 이력
 
+## v1.0.1 — 2026-11-07
+
+- BIN/CUE용 xdelta 추가. RetroArch ClownMDEmu가 CHD(원본 포함)로는 제1화 방 장면에서 종료되는 문제를 BIN/CUE로 우회. 게임 내용 변경 없음.
+- 에뮬레이터별 안내(Genesis Plus GX·PicoDrive 일본판 BIOS 필요, BlastEm 메가 CD 미지원) 추가.
+
 ## v1.0.0 — 2026-11-04
 
 - 마법의 소녀 실키립(메가 CD 일본판) 첫 정식 한글패치 릴리즈.
